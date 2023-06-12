@@ -89,7 +89,7 @@ main {
     display: flex;
 }
 
-.container {
+.section {
     color: #CBE4DE;
     font-size: 30px;
     display: flex;
@@ -99,6 +99,42 @@ main {
 
 .content {
     flex: 1;
+}
+
+.container {
+    /* width: 60%; */
+    margin: 5%;
+    /* display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 10%; */
+}
+
+.row {
+    /* padding: 50px; */
+    /* width: 60%; */
+    /* margin: auto; */
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 40px;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.item {
+    /* background-color: rgb(138, 209, 254); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columns {
+    color: #CBE4DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: red;
 }
 
 .sidebar img {
@@ -153,6 +189,8 @@ main {
 @media screen and (max-width: 576px) {
     .menu-toggle {
         display: flex;
+        position: absolute;
+        z-index: 99;
     }
 
     nav ul {
@@ -165,7 +203,7 @@ main {
         flex-direction: column;
         align-items: center;
         background-color: #0E8388;
-        z-index: -1;
+        z-index: 9;
         transform: translateX(100%);
         transition: all 1s;
     }
@@ -183,6 +221,44 @@ main {
         margin-right: 100px;
         padding-top: 20px;
         display: flex;
+    }
+
+}
+
+
+@media screen and (max-width: 300px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: #0E8388;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    nav ul li a:hover {
+        color: #2e4f4f;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+    }
+
+    main {
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-top: 20px;
+        display: none;
     }
 
 }
