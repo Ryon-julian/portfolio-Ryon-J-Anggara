@@ -121,12 +121,13 @@ main {
 .container-item {
     height: 40px;
     border-radius: 10px;
+    font-size: 30px;
     color: #CBE4DE;
     background-color: #0E8388;
 }
 
-.container-img {
-    /* height: 50px; */
+.container-item img {
+    height: 40px;
 }
 
 .columns {
