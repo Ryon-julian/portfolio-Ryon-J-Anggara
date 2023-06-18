@@ -216,6 +216,13 @@ aside {
     padding: 20px;
 }
 
+.portfolio {
+    color: #CBE4DE;
+    text-align: center;
+    padding: 20px;
+}
+
+
 .box {
     display: grid;
     justify-content: center;
@@ -251,16 +258,107 @@ h5 {
     margin-bottom: 25px;
 }
 
-/* .content {
-    float: left;
-    width: 75%;
-    padding-right: 20px;
-
-} */
-
-
-
 /* end sidebar */
+.slide-container {
+    display: grid;
+    justify-content: center;
+    /* background-color: #efefef; */
+}
+
+.card-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    grid-template-columns: 25% 25% 25%;
+}
+
+.slide-content {
+    margin: 0 40px;
+}
+
+.card-testimoni {
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0E8388;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before .overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: red;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #0E8388;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2e4f4f;
+}
 
 /* Hamburger Menu Animation */
 .menu-toggle span:nth-child(2) {
