@@ -260,17 +260,17 @@ h5 {
 
 /* end sidebar */
 .slide-container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    padding: 30px;
     /* background-color: #efefef; */
 }
 
 .card-wrapper {
-    display: grid;
-    justify-content: center;
-    align-items: center;
     min-height: 40px;
-    grid-template-columns: 25% 25% 25%;
+    /* grid-template-columns: 10% 10% 10%; */
 }
 
 .slide-content {
@@ -358,6 +358,21 @@ h5 {
 
 .button:hover {
     background-color: #2e4f4f;
+}
+
+/* footer */
+footer {
+    background: #0E8388;
+    padding: 25px;
+    color: #CBE4DE;
+}
+
+footer span a {
+    color: #111;
+}
+
+footer span a:hover {
+    text-decoration: underline;
 }
 
 /* Hamburger Menu Animation */
